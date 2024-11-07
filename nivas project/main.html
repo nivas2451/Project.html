@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Book Store</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-image: url(0710.jpg_wh1200.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2px;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .logo span {
+            color: #ff4500;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ff4500;
+        }
+
+        .cta {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+
+        .hero-section {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background-color: #e03e00;
+        }
+
+
+        .intro-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+
+        .featured-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .featured-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .book-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .book-item {
+            width: 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .book-item:hover {
+            transform: scale(1.05);
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .book-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            color: #ff4500;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Book <span>Store</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta">Shop Now</a>
+        </div>
+    </header>
+    <section class="intro-section">
+        <div class="container">
+            <h2>About Our Store</h2>
+            <p>We offer a wide variety of books from different genres including fiction, non-fiction, mystery, romance,
+                and many more. Find your next read with us!</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to Our Book Store</h1>
+            <p>Your one-stop destination for all genres of books.</p>
+            <a href="books.html" class="hero-btn">Browse Books</a>
+        </div>
+    </section>
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="https://m.media-amazon.com/images/I/71gIKHSWcfL._UF1000,1000_QL80_.jpg" alt="Book 1">
+                    <h3>All This Little Things</h3>
+                    <p>₹400.00</p>
+                </div>
+                <div class="book-item">
+                    <img src="https://blog.cdn.level.game/2023/06/71ZA-vKnFRL._AC_UF1000-1000_QL80_.jpg" alt="Book 2">
+                    <h3>Think And Grow Rich</h3>
+                    <p>₹350</p>
+                </div>
+                <div class="book-item">
+                    <img src="https://www.jaicobooks.com/wp-content/uploads/2023/07/J-3123.jpeg" alt="Book 3">
+                    <h3>The Self Discipline Manual</h3>
+                    <p>₹300.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Book Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

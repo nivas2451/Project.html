@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(ad5468b996c86f4e0c6fa4eb356e0b06.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.cta {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.books-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.book-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-item h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #ff4500;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e63900;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <div class="logo">Book <span>Store</span></div>
+        <nav>
+            <ul class="nav-links">
+               
+                
+                <li><a href="main.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta">Order Your Book Now</a>
+    </div>
+</header>
+
+
+<section class="books-section">
+    <div class="container">
+        <h2>All Books</h2>
+        <div class="books-grid">
+           
+            <div class="book-item">
+                <img src="https://m.media-amazon.com/images/I/81nMpleizLL._UF1000,1000_QL80_.jpg" alt="The Hare With Amber Eyes">
+                <h3>The Hare With Amber Eyes</h3>
+                <p class="price">₹400.00</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            
+            <div class="book-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1574272133i/1319.jpg" alt="The War of Art">
+                <h3>The War of Art</h3>
+                <p class="price">₹350.00</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="https://images.meesho.com/images/products/118637870/lp1r3_512.webp" alt="The Immortals of Meluha">
+                <h3>The Immortals of Meluha</h3>
+                <p class="price">₹450.00</p>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            
+        </div>
+       
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2024 Online Book Centre | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

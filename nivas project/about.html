@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(design-elements-wave-many-lines-abstract-vertical-wavy-stripes-white-background-isolated-creative-line-art-vector-illustration-eps-10-colourful-waves-with-lines-created-using-blend-tool_299644-6886.avif);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(design-elements-wave-many-lines-abstract-vertical-wavy-stripes-white-background-isolated-creative-line-art-vector-illustration-eps-10-colourful-waves-with-lines-created-using-blend-tool_299644-6886.avif);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #ff4500;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4500;
+}
+
+.cta {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+
+<header>
+    <div class="container navbar">
+        <div class="logo">Book <span>Store</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta">Shop Now</a>
+    </div>
+</header>
+
+<section class="about-section">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>At Book Store, we bring you a wide variety of books to fuel your passion for reading. Our goal is to provide quality books and a seamless shopping experience.</p>
+        
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.stockcake.com/public/9/d/4/9d42b563-66b4-4794-84aa-3342ac938c8f_large/reading-together-quietly-stockcake.jpg" alt="Our Team">
+            </div>
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2024, Book Store has quickly grown into a trusted name for book lovers across the country. Our journey began with a passion for reading and a commitment to making books accessible to everyone.</p>
+                <p>Our dedication to quality and customer satisfaction sets us apart. We hope you enjoy our products as much as we enjoy bringing them to you!</p>
+            </div>
+        </div>
+        
+        <div class="mission-vision">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To ignite the love for reading by providing books at affordable prices.</p>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To be the preferred choice for book lovers across the world, with a vast and diverse selection of books.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2024 Book Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
